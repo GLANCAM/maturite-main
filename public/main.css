@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap%27');
+
+:root{
+    --orange-color: #e77817;
+    --background-gray: #aeaeae;
+    --font-title: "Yusei Magic", sans-serif;
+}
+
+body {
+  background-color: transparent;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: block;
+}
+
+.btn-a{
+  display: block;
+  text-decoration: none;
+  color: var(--orange-color);
+  border: 0.365vw solid var(--orange-color);
+  font-size: 3.125vw;
+  text-transform: uppercase;
+  font-family: var(--font-title);
+}
+
+.btn-a:hover {
+  cursor: pointer;
+  background-color: black;
+  border-color: black;
+  transition: background 1s;
+}
+
+
