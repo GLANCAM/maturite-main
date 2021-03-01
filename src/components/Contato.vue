@@ -62,7 +62,8 @@ export default {
 }
 #contato h1{
     font-size: 4vw;
-    font-family: "Times New Roman", times, serif;
+    text-transform: uppercase;
+    font-family: var(--font-title);
     padding-top: 4%;
     padding-bottom: 4%;
 }
@@ -96,7 +97,7 @@ export default {
     margin: 25px 0;
 }
 .info-contato span{
-    font-family: "Times New Roman", times, serif;
+    font-family: var(--font-title);
     color: rgb(161, 150, 150);
     font-size: 3.5vw;
     margin-left: 3.7vw;
@@ -121,6 +122,9 @@ export default {
     cursor: pointer;
 }
 @media (max-width: 1200px){
+    #contato h1{
+    font-size: 6vw;
+}
     .mapa{
         width: 100%;
         margin: 6vw auto 0 auto;

@@ -78,6 +78,10 @@ export default {
 </script>
 
 <style>
+h1 .center-text{
+  font-family: var(--font-title);
+}
+
   .down1000{
     display: none !important;
   }
@@ -246,7 +250,7 @@ export default {
   }
 
   .down1000 .center-text{
-    font-size: 5vw;
+    font-size: 6vw;
   }
   
 .left{

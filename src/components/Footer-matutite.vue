@@ -19,7 +19,6 @@ footer{
     align-items: center;
     justify-content: flex-start;
     font-weight: normal;
-    border: 1px solid red;
 }
 
 footer h6{

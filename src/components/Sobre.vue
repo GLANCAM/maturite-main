@@ -16,8 +16,8 @@
             </p>
             </div>
             <div class="img-about">
-                <img src="../assets/sobre-foto.png" alt="">
-                <a href="about.html" class="btn-a btn-orange">saiba mais</a>
+                <img src="../assets/sobre-foto.png" alt="Foto sobre">
+                <router-link to="sobre" style="text-decoration:none"><a class="btn-a btn-orange">saiba mais</a></router-link>
             </div>
         </div>
     </section>
@@ -35,6 +35,7 @@ export default {
 </script>
 
 <style>
+
 .about {
     width: 100vw;
     grid-auto-flow: column;

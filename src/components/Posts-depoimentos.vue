@@ -67,23 +67,20 @@ export default {
 </script>
 
 <style>
-    /* 
-// ********** POSTS **********
-*/
-  
-  .posts-depositions {
-    width: 100vw;
+
+.posts-depositions {
     background-color: black;
     display: grid;
     justify-content: center;
-    padding: 3.65vw 0;
+    padding: 70px 0;
     grid-template-areas: "posts depositions";
   }
+  
   .posts {
-    max-width: 42.7vw;
+    max-width: 820px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.73vw;
-    line-height: 0.9375vw;
+    font-size: 14px;
+    line-height: 18px;
     color: #262626;
     display: grid;
     grid-template-areas:
@@ -91,18 +88,18 @@ export default {
       "left image right";
     justify-content: center;
     align-items: center;
-    padding-right: 2.1vw;
-    border-right: 0.16vw dashed var(--orange-color);
+    padding-right: 40px;
+    border-right: 3px dashed var(--orange-color);
     grid-area: posts;
   }
   .posts h1 {
     text-align: center;
-    margin-bottom: 2.6vw;
+    margin-bottom: 50px;
   }
   .title-posts {
     color: var(--orange-color);
     font-family: var(--font-title);
-    font-size: 3.125vw;
+    font-size: 40px;
     font-weight: normal;
     text-decoration: none;
     text-transform: uppercase;
@@ -110,110 +107,162 @@ export default {
   }
   .left-arrow-posts {
     grid-area: left;
-    padding-right: 1.04vw;
+    padding-right: 20px;
   }
   .right-arrow-posts {
-    padding-left: 1.04vw;
+    padding-left: 20px;
     grid-area: right;
   }
   .img-posts {
     background-color: white;
-    padding: 0 0 0.52vw 0;
+    padding: 0 0 10px 0;
     grid-area: image;
   }
   .post-name {
     display: flex;
-    padding: 0.26vw;
+    padding: 5px;
     align-items: center;
   }
   .post img {
-    max-width: 23.7vw;
-    max-height: 36.72vw;
+    max-width: 455px;
+    max-height: 705px;
   }
   .post-caption {
-    max-width: 22.66vw;
+    max-width: 435px;
   }
   .post-caption div {
     display: flex;
     align-items: center;
   }
   .post-caption div img {
-    width: 1.04vw;
-    padding: 0.15625vw 0;
-    border: 0.052vw solid var(--orange-color);
+    width: 20px;
+    padding: 3px 0;
+    border: 1px solid var(--orange-color);
     border-radius: 70px;
   }
   .post-caption {
-    margin-left: 0.52vw;
+    margin-left: 10px;
   }
   .post-caption div p {
-    margin-left: 0.26vw;
+    margin-left: 5px;
   }
   .foto-perfil-instagram img {
-    border: 0.104vw solid var(--orange-color);
-    width: 2.08vw;
-    padding: 0.26vw 0;
-    border-radius: 2.6vw;
+    border: 2px solid var(--orange-color);
+    width: 40px;
+    padding: 5px 0;
+    border-radius: 50px;
   }
   .post-name-location {
-    margin-left: 0.52vw;
+    margin-left: 10px;
   }
   .post-name-location p:last-child {
-    font-size: 0.625vw;
-    line-height: 0.781vw;
+    font-size: 12px;
+    line-height: 15px;
     font-weight: 400;
   }
   .post-more-options {
-    padding-left: 9.9vw;
+    padding-left: 190px;
   }
   .post-time {
-    font-size: 0.52vw;
-    line-height: 0.9375vw;
+    font-size: 10px;
+    line-height: 18px;
     font-weight: 400;
     color: #8e8e8e;
-    margin-left: 0.52vw;
+    margin-left: 10px;
   }
   .botoes-post {
     width: 100%;
   }
   .botao-inicial-svg {
-    margin-left: 0.52vw;
+    margin-left: 10px;
   }
   .botao-svg {
-    margin-top: 0.26vw;
-    margin-right: 0.365vw;
+    margin-top: 5px;
+    margin-right: 7px;
   }
   .save-post {
-    margin-left: 15.89vw;
+    margin-left: 305px;
   }
-  
-/* 
-// ********** DEPOIMENTOS **********
-*/
+  @media (min-width:600px) and (max-width:1200px){
+    .posts-depositions{
+      grid-template-areas: 
+      "posts"
+      "depositions";
+      justify-content: center;
+    }
+    .left-arrow-posts img {
+      width: 30px;
+    }
+    .right-arrow-posts img{
+      width: 30px;
+    }
+    .posts{
+      border-right: 0;
+      padding: 0;
+      margin-bottom: 50px;
+      margin-left: 0;
+    }
+  }
+  @media (min-width:320px) and (max-width:599px){
+    .posts-depositions{
+      grid-template-areas: 
+      "posts"
+      "depositions";
+      justify-content: center;
+      
+    }
+    .title-posts h1{
+      font-size: 40px;
+    }
+    .img-posts{
+      max-width: 280px;
+    }
+    .post img{
+      max-width: 280px;
+    }
+    .post-more-options {
+      padding-left: 40px;
+    }
+    .save-post {
+      margin-left: 130px;
+    }
+    .left-arrow-posts img {
+      width: 30px;
+    }
+    .right-arrow-posts img{
+      width: 30px;
+    }
+    .posts{
+      border-right: 0;
+      padding: 0;
+      margin-bottom: 50px;
+    }
+  }
+  /* DEPOIMENTOS */
   
   .depositions {
-    max-width: 42.7vw;
+    max-width: 820px;
     font-family: "Times New Roman", Times, serif;
     color: #707070;
-    font-size: 1.5625vw;
-    line-height: 2.1875vw;
+    font-size: 30px;
+    line-height: 42px;
     text-align: center;
     grid-area: depositions;
-    margin-left: 2.08vw;
+    margin-left: 0px;
   }
   .depositions h1 {
     font-family: var(--font-title);
-    font-size: 3.125vw;
+    font-size: 60px;
     color: var(--orange-color);
     text-transform: uppercase;
-    margin-bottom: 2.08vw;
+    margin-bottom: 40px;
   }
   .depositions button {
     background-color: white;
-    height: 1.5625vw;
-    width: 1.5625vw;
-    margin: 0 0.52vw;
-    border-radius: 0.78125vw;
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+    border-radius: 15px;
   }
   
   .depositions button:hover {
@@ -223,5 +272,18 @@ export default {
   .botoes-depositions .btn-deposition-active {
     background-color: var(--orange-color);
   }
+  
+  @media (min-width:320px) and (max-width:1000px){
+    .depositions{
+      justify-self: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0;
+      padding: 0 30px;
+    }
+  }
+
 
 </style>
