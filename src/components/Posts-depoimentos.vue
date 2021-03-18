@@ -183,7 +183,7 @@ export default {
   .save-post {
     margin-left: 305px;
   }
-  @media (min-width:600px) and (max-width:1200px){
+  @media screen and  (min-width:600px) and (max-width:1200px){
     .posts-depositions{
       grid-template-areas: 
       "posts"
@@ -203,7 +203,7 @@ export default {
       margin-left: 0;
     }
   }
-  @media (min-width:320px) and (max-width:599px){
+  @media screen and  (min-width:320px) and (max-width:599px){
     .posts-depositions{
       grid-template-areas: 
       "posts"
@@ -273,7 +273,7 @@ export default {
     background-color: var(--orange-color);
   }
   
-  @media (min-width:320px) and (max-width:1000px){
+  @media screen and  (min-width:320px) and (max-width:1000px){
     .depositions{
       justify-self: center;
       justify-content: center;

@@ -84,7 +84,7 @@ export default {
     margin-bottom: 1.927vw;
   }
 
-  @media (max-width: 1200px) {
+  @media screen and  (max-width: 1200px) {
       .about-grid{
           grid-template-areas: 
       "title title"
@@ -116,14 +116,16 @@ export default {
       }
   }
 
-  @media (max-width: 600px){
+  @media screen and  (max-width: 600px){
     .text-about{
         font-size: 5vw;
+      }
+      .title-about{
+        font-size: 7vw;
       }
        .img-about a{
         font-size: 7vw;
       }
-
   }
   
 </style>

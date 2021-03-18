@@ -36,4 +36,32 @@ header {
   transition: background 1s;
 }
 
+.size-text{
+  font-size: 1.823vw;
+}
+
+.title-size{
+  font-size: 3.125vw;
+} 
+
+@media screen and  (max-width: 1200px){
+  .size-text{
+    font-size: 3vw;
+  }
+  
+  .title-size{
+    font-size: 4vw;
+  } 
+}
+
+@media screen and  (max-width: 600px){
+  .size-text{
+    font-size: 5vw;
+  }
+  
+  .title-size{
+    font-size: 7vw;
+  } 
+}
+
 

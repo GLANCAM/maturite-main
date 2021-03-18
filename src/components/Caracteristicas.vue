@@ -213,7 +213,7 @@ h1 .center-text{
   align-self: flex-end;
 }
 
-@media (max-width: 1000px){
+@media screen and (max-width: 1000px){
   .middle-hearts {
     display: none;
   }

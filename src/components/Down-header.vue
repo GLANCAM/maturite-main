@@ -18,6 +18,7 @@ export default {
     #initial-sobre{
     width: 100vw;
     background: gray url('../assets/planta.png') no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
 }
@@ -32,7 +33,7 @@ export default {
       height: 100%;
   }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   #initial-sobre{
       justify-content: center;
       height: 40vh;

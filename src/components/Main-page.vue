@@ -4,7 +4,6 @@
         <div v-if="pageMounted" id="page" key="main-page">
           <DownHeader/>
           <Sobre/>
-          <Posts-depoimentos/>
           <Planos/>
           <Caracteristicas/>
           <Contato/>
@@ -23,7 +22,7 @@ import Sobre from './Sobre'
 import Contato from './Contato.vue'
 import Planos from './Planos.vue'
 import Caracteristicas from './Caracteristicas.vue'
-import PostsDepoimentos from './Posts-depoimentos.vue'
+//import PostsDepoimentos from './Posts-depoimentos.vue'
 
 
 export default {
@@ -34,7 +33,7 @@ export default {
     Contato,
     Planos,
     Caracteristicas,
-    PostsDepoimentos
+    //PostsDepoimentos
   },
   mounted () {
     window.addEventListener('load', ()  => this.activateTransition())
@@ -59,7 +58,7 @@ export default {
       let image = document.querySelector('img')
       console.log(image)
       let isLoaded = image.complete && image.naturalHeight
-      //this.wait(1000)
+      this.wait(1000)
       if (isLoaded)
         this.pageMounted = true
       else{

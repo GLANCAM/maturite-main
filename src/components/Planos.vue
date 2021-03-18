@@ -111,7 +111,7 @@ export default {
   transition: background 1s;
   }
 
-  @media (max-width: 1200px){
+  @media  screen and (max-width: 1200px){
       .plans-title h1{
           font-size: 30px;
       }
@@ -127,7 +127,7 @@ export default {
   }
   }
 
-  @media (max-width: 935px){
+  @media  screen and (max-width: 935px){
   .btn-plans a {
     font-size: 25px;
   }

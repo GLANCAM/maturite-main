@@ -2,7 +2,7 @@
   <header>
     <div class="header-hamburguer">
       <div class="header-logo">
-        <img src="../assets/text-maturite.svg" alt="Maturité" />
+        <router-link to="/"><img src="../assets/text-maturite.svg" alt="Maturité" /></router-link>
       </div>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"
@@ -18,7 +18,7 @@
     </div>
     <div class="header">
       <div class="header-logo">
-        <img src="../assets/text-maturite.svg" alt="Maturité" />
+        <router-link to="/"><img src="../assets/text-maturite.svg" alt="Maturité" /></router-link>
       </div>
       <div class="header-menu">
         <nav>
@@ -45,7 +45,6 @@ export default {
 
 <style>
 /*CONTAINER DO HEADER*/
-
 .header {
   background-color: black;
   position: sticky;
@@ -78,7 +77,7 @@ export default {
 .header-menu nav a {
   /*Parte de animação */
   display: inline;
-  background: linear-gradient(90deg, #fc5d5c, #fef952);
+  background: linear-gradient(90deg, white, white);
   background-size: 0% 3px;
   transition: background 0.3s linear;
   background-position: 0% 100%;
@@ -220,7 +219,7 @@ export default {
   top: 0;
 }
 
-@media (max-width: 1200px) {
+@media screen and  (max-width: 1200px) {
   .header {
     display: none;
   }
@@ -235,7 +234,7 @@ export default {
   }
 }
 
-@media (max-width: 500px) {
+@media screen and  (max-width: 500px) {
   .header-hamburguer .menu-icon .navicon {
     width: 35px;
     height: 3.5px;

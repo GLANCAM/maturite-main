@@ -121,7 +121,7 @@ export default {
 .icn-contato:hover{
     cursor: pointer;
 }
-@media (max-width: 1200px){
+@media screen and (max-width: 1200px){
     #contato h1{
     font-size: 6vw;
 }
